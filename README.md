@@ -16,7 +16,7 @@ Describe a little about what the project is about here.
 - Linux
 - Windows
 # Important Links
-Kanban Board: [link]\
+Kanban Board: (https://trello.com/b/pkMnrOM0/beyond-the-last-goodbye)\
 Designs: [link]\
 Styles Guide(s): [link]
 
