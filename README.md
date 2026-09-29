@@ -1,6 +1,6 @@
 # Beyond The Last Goodbye : Team 15
 # Members
-Project Manager: [Name] ([GitHub Name])\
+Project Manager: Justin Mexil (@justin2flyy)\
 Communications Lead: [Name] ([GitHub Name])\
 Git Master: [Name] ([GitHub Name])\
 Design Lead: [Name] ([GitHub Name])\
