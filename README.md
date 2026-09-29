@@ -1,4 +1,4 @@
-# [Name of the Project] : [Team Number]
+# Beyond The Last Goodbye : Team 15
 # Members
 Project Manager: [Name] ([GitHub Name])\
 Communications Lead: [Name] ([GitHub Name])\
