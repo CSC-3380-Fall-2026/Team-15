@@ -1,22 +1,23 @@
 # Beyond The Last Goodbye : Team 15
 # Members
 Project Manager: Justin Mexil (@justin2flyy)\
-Communications Lead: [Name] ([GitHub Name])\
-Git Master: [Name] ([GitHub Name])\
-Design Lead: [Name] ([GitHub Name])\
-Quality Assurance Tester: [Name] ([GitHub Name])
+Communications Lead: Antonio Johnson (@johnsonantonio2004-creator)\
+Git Master: Javin Vezinat (@JavinVez)\
+Design Lead: Isaac Moreno (@IsaacMoreno7)\
+Quality Assurance Tester: Jacob Wear ([GitHub Name])
 
 # About Our Software
 
-Describe a little about what the project is about here.
+Beyond the Last Goodbye is a single player, 2D dungeon crawler, about loss & hope, built in Godot 4 with C#.
+
+
 ## Platforms Tested on
-- MacOS
-- Android
-- iOS
-- Linux
 - Windows
+
+
 # Important Links
-Kanban Board: (https://trello.com/b/pkMnrOM0/beyond-the-last-goodbye)\
+Kanban Board: (https://trello.com/b/pkMnrOM0/beyond-the-last-goodbye)
+\
 Designs: [link]\
 Styles Guide(s): [link]
 
