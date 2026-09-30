@@ -21,36 +21,48 @@ Kanban Board: (https://trello.com/b/pkMnrOM0/beyond-the-last-goodbye)
 Designs: [link]\
 Styles Guide(s): [link]
 
-# How to Run Dev and Test Environment
+## How to Run Dev and Test Environment
 
-## Dependencies
-- List all dependencies here
-- Don't forget to include versions
+### Dependencies
+- Godot Engine 4.7.2 .NET (the ".NET" build with C# support, not the standard build)
+- .NET SDK 8.0 or newer (tested with 10.0.401)
+- Git (tested with 2.54.0)
+- Optional IDE: Visual Studio Code (free) with the **C# Dev Kit** and **godot-tools** extensions
+
 ### Downloading Dependencies
-Describe where to download the dependencies here. Some will likely require a web download. Provide links here. For IDE extensions, make sure your project works with the free version of them, and detail which IDE(s) these are available in. 
-
-## Commands
-Describe how the commands and process to launch the project on the main branch in such a way that anyone working on the project knows how to check the affects of any code they add.
-
-```sh
-Example terminal command syntax
+1. **Godot 4.7.2 .NET:** https://godotengine.org/download → download the **Windows – .NET – x86_64** build. Unzip it to a permanent folder (e.g. `C:\Godot\`). Keep the `GodotSharp` folder next to the `.exe`.
+2. **.NET SDK:** https://dotnet.microsoft.com/download → install the latest **SDK** (not Runtime) for **Windows x64**. Or in PowerShell:
+```
+   winget install Microsoft.DotNet.SDK.10
+```
+3. **Git:** https://git-scm.com/downloads
+4. Verify installs in a new PowerShell window:
+```
+   git --version
+   dotnet --version
 ```
 
-It is very common in these sections to see code in peculiar boxes to help them stand out. Check the markdown section of the Project Specifications to see how to add more / customize these.
+> If Windows blocks Godot from opening, run this in PowerShell to unblock the downloaded files:
+> ```
+> Get-ChildItem -Path "C:\Godot" -Recurse | Unblock-File
+> ```
 
-```python
-def code_highlight_example(m: int, m: float, s: str) -> str:
-	return s + str(n*m)
+### Commands
+Clone the repo and switch to the dev branch:
+```
+git clone https://github.com/CSC-3380-Fall-2026/Team-15.git
+cd Team-15
+git checkout dev
 ```
 
-```java
-public static void main(String[] args){
-	System.out.println("Hello, World!");
-}
-```
+**Run from the Godot editor:**
+1. Open Godot 4.7.2 .NET → **Import** → select `project.godot` in the Team-15 folder
+2. Click the **hammer icon** (Build) in the top right
+3. Press **F5** to run the game
 
-```c#
-static void Main(){
-	Console.WriteLine("Hello, World!");
-}
+**Run from the command line** (from inside the Team-15 folder):
 ```
+dotnet build
+& "C:\Godot\Godot_v4.7.2-stable_mono_win64\Godot_v4.7.2-stable_mono_win64_console.exe" --path .
+```
+Change the Godot path if you unzipped it somewhere else. The Output should show `Beyond The Last Goodbye loaded`.
