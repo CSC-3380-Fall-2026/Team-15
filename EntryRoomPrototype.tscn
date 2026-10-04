@@ -1,0 +1,138 @@
+[gd_scene format=3 uid="uid://ht5nnlfe851e"]
+
+[ext_resource type="PackedScene" path="res://Scenes/PlayerPreview.tscn" id="1"]
+[ext_resource type="Script" path="res://Scripts/RoomPreview.cs" id="2"]
+
+[sub_resource type="RectangleShape2D" id="Horizontal"]
+size = Vector2(640, 16)
+
+[sub_resource type="RectangleShape2D" id="Vertical"]
+size = Vector2(16, 512)
+
+[sub_resource type="RectangleShape2D" id="Obstacle"]
+size = Vector2(48, 68)
+
+[node name="EntryRoomPrototype" type="Node2D" unique_id=1528554753]
+script = ExtResource("2")
+
+[node name="Room" type="Node2D" parent="." unique_id=1095021249]
+position = Vector2(32, 64)
+
+[node name="Floor" type="Polygon2D" parent="Room" unique_id=245910979]
+color = Color(0.22, 0.2, 0.3, 1)
+polygon = PackedVector2Array(0, 0, 640, 0, 640, 512, 0, 512)
+
+[node name="North" type="StaticBody2D" parent="Room" unique_id=1717950869]
+position = Vector2(320, 8)
+collision_mask = 2
+
+[node name="Visual" type="Polygon2D" parent="Room/North" unique_id=1382815739]
+color = Color(0.55, 0.5, 0.61, 1)
+polygon = PackedVector2Array(-320, -8, 320, -8, 320, 8, -320, 8)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Room/North" unique_id=1056696803]
+shape = SubResource("Horizontal")
+
+[node name="South" type="StaticBody2D" parent="Room" unique_id=860965190]
+position = Vector2(320, 504)
+collision_mask = 2
+
+[node name="Visual" type="Polygon2D" parent="Room/South" unique_id=1244759220]
+color = Color(0.55, 0.5, 0.61, 1)
+polygon = PackedVector2Array(-320, -8, 320, -8, 320, 8, -320, 8)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Room/South" unique_id=1407508]
+shape = SubResource("Horizontal")
+
+[node name="West" type="StaticBody2D" parent="Room" unique_id=1588051023]
+position = Vector2(8, 256)
+collision_mask = 2
+
+[node name="Visual" type="Polygon2D" parent="Room/West" unique_id=819485934]
+color = Color(0.55, 0.5, 0.61, 1)
+polygon = PackedVector2Array(-8, -256, 8, -256, 8, 256, -8, 256)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Room/West" unique_id=355834059]
+shape = SubResource("Vertical")
+
+[node name="East" type="StaticBody2D" parent="Room" unique_id=1209894758]
+position = Vector2(632, 256)
+collision_mask = 2
+
+[node name="Visual" type="Polygon2D" parent="Room/East" unique_id=1462453469]
+color = Color(0.55, 0.5, 0.61, 1)
+polygon = PackedVector2Array(-8, -256, 8, -256, 8, 256, -8, 256)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Room/East" unique_id=172955422]
+shape = SubResource("Vertical")
+
+[node name="ObstacleA" type="StaticBody2D" parent="Room" unique_id=598399622]
+position = Vector2(304, 154)
+collision_mask = 2
+
+[node name="Visual" type="Polygon2D" parent="Room/ObstacleA" unique_id=202254116]
+color = Color(0.55, 0.5, 0.61, 1)
+polygon = PackedVector2Array(-24, -34, 24, -34, 24, 34, -24, 34)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Room/ObstacleA" unique_id=725857828]
+shape = SubResource("Obstacle")
+
+[node name="ObstacleB" type="StaticBody2D" parent="Room" unique_id=1867705170]
+position = Vector2(304, 359)
+collision_mask = 2
+
+[node name="Visual" type="Polygon2D" parent="Room/ObstacleB" unique_id=1392439172]
+color = Color(0.55, 0.5, 0.61, 1)
+polygon = PackedVector2Array(-24, -34, 24, -34, 24, 34, -24, 34)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Room/ObstacleB" unique_id=1118514324]
+shape = SubResource("Obstacle")
+
+[node name="PlayerSpawn" type="Marker2D" parent="Room" unique_id=1066394729]
+position = Vector2(96, 256)
+
+[node name="EnemySpawn1" type="Marker2D" parent="Room" unique_id=1980118743]
+position = Vector2(430, 130)
+
+[node name="EnemySpawn2" type="Marker2D" parent="Room" unique_id=468817341]
+position = Vector2(500, 256)
+
+[node name="EnemySpawn3" type="Marker2D" parent="Room" unique_id=1588650874]
+position = Vector2(430, 385)
+
+[node name="ExitGate" type="Marker2D" parent="Room" unique_id=1947979167]
+position = Vector2(614, 256)
+
+[node name="GateVisual" type="Polygon2D" parent="Room/ExitGate" unique_id=750504537]
+color = Color(0.9, 0.65, 0.25, 1)
+polygon = PackedVector2Array(-10, -32, 10, -32, 10, 32, -10, 32)
+
+[node name="PlayerPreview" parent="Room" unique_id=44490226 instance=ExtResource("1")]
+position = Vector2(96, 256)
+
+[node name="Title" type="Label" parent="." unique_id=536699349]
+offset_left = 32.0
+offset_top = 18.0
+theme_override_font_sizes/font_size = 22
+text = "LEVEL 1 - THRESHOLD |  ROOM PROTOTYPE"
+
+[node name="Instructions" type="Label" parent="." unique_id=2897029]
+offset_left = 700.0
+offset_top = 80.0
+offset_right = 945.0
+theme_override_font_sizes/font_size = 16
+text = "YOUR TWO TASKS
+
+2 points: Player walk art
+2 points: Room layout
+
+WASD / arrows: move
+
+Pink dots = spawn plans
+Gold = exit location
+
+Walls / obstacles are solid.
+Gate is a visual marker.
+
+Reference art provided.
+Replace with your own art."

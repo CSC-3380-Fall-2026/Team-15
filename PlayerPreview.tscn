@@ -1,0 +1,66 @@
+[gd_scene load_steps=12 format=3]
+
+[ext_resource type="Script" path="res://Scripts/PlayerPreview.cs" id="1"]
+[ext_resource type="Texture2D" path="res://Art/Reference/guardian_reference_sheet.svg" id="2"]
+
+[sub_resource type="AtlasTexture" id="Frame0"]
+atlas = ExtResource("2")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="Frame1"]
+atlas = ExtResource("2")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="Frame2"]
+atlas = ExtResource("2")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="Frame3"]
+atlas = ExtResource("2")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="Frame4"]
+atlas = ExtResource("2")
+region = Rect2(256, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="Frame5"]
+atlas = ExtResource("2")
+region = Rect2(320, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="Frame6"]
+atlas = ExtResource("2")
+region = Rect2(384, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="Frame7"]
+atlas = ExtResource("2")
+region = Rect2(448, 0, 64, 64)
+
+[sub_resource type="SpriteFrames" id="Frames"]
+animations = [{
+"frames": [{"duration": 1.0, "texture": SubResource("Frame0")},{"duration": 1.0, "texture": SubResource("Frame1")},{"duration": 1.0, "texture": SubResource("Frame2")},{"duration": 1.0, "texture": SubResource("Frame3")}],
+"loop": true,
+"name": &"idle",
+"speed": 7.0
+}, {
+"frames": [{"duration": 1.0, "texture": SubResource("Frame4")},{"duration": 1.0, "texture": SubResource("Frame5")},{"duration": 1.0, "texture": SubResource("Frame6")},{"duration": 1.0, "texture": SubResource("Frame7")}],
+"loop": true,
+"name": &"walk",
+"speed": 8.0
+}]
+
+[sub_resource type="CircleShape2D" id="Body"]
+radius = 10.0
+
+[node name="PlayerPreview" type="CharacterBody2D"]
+collision_layer = 2
+collision_mask = 1
+script = ExtResource("1")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(0, -18)
+sprite_frames = SubResource("Frames")
+animation = &"idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("Body")
