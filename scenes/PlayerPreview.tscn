@@ -1,7 +1,7 @@
 [gd_scene load_steps=12 format=3]
 
-[ext_resource type="Script" path="res://Scripts/PlayerPreview.cs" id="1"]
-[ext_resource type="Texture2D" path="res://Art/Reference/guardian_reference_sheet.svg" id="2"]
+[ext_resource type="Script" path="res://scripts/PlayerPreview.cs" id="1"]
+[ext_resource type="Texture2D" path="res://assets/guardian_reference_sheet.svg" id="2"]
 
 [sub_resource type="AtlasTexture" id="Frame0"]
 atlas = ExtResource("2")
