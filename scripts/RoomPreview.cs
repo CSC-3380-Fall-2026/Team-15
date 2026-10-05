@@ -35,7 +35,7 @@ public partial class RoomPreview : Node2D
     private async void Capture()
     {
         await ToSignal(RenderingServer.Singleton, RenderingServer.SignalName.FramePostDraw);
-        GetViewport().GetTexture().GetImage().SavePng("res://Evidence/room_preview.png");
+        GetViewport().GetTexture().GetImage().SavePng("res://assets/room_preview.png");
         GetTree().Quit();
     }
 
