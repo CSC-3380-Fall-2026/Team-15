@@ -1,0 +1,42 @@
+{
+  "levels": [
+    {
+      "id": "level_1",
+      "level_number": 1,
+      "display_name": "The Forgotten Crypt",
+      "room_width_tiles": 20,
+      "room_height_tiles": 16,
+      "tile_size_px": 32,
+      "start_room_id": "level_1_room_1",
+      "rooms": [
+        {
+          "id": "level_1_room_1",
+          "type": "combat",
+          "next_room_ids": ["level_1_room_2"],
+          "combat": {
+          "enemy_slot_1": { "enemy_id": "skeleton_grunt" },
+          "enemy_slot_2": { "enemy_id": "skeleton_grunt" },
+          "enemy_slot_3": { "enemy_id": "skeleton_grunt" }}
+        },
+        {
+        "id": "level_1_room_2",
+        "type": "treasure",
+        "next_room_ids": ["level_1_room_3"],
+        "treasure": {
+        "item_id": "health_potion"}
+        },
+        {
+        "id": "level_1_room_3",
+        "type": "rest",
+        "next_room_ids": ["level_1_room_4"]},
+        {
+        "id": "level_1_room_4",
+          "type": "boss",
+          "next_room_ids": [],
+          "boss": {
+          "boss_id": "grave_warden"}
+        }
+      ]
+    }
+  ]
+}
