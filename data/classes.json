@@ -1,47 +1,41 @@
 {
-  "classes": [
+   "classes": [
     {
       "id": "guardian",
       "display_name": "Guardian",
       "description": "A sturdy frontline fighter who protects allies.",
       "role": "tank",
       "stats": {
-        "max_health": 150,
-        "move_speed_px_per_second": 170,
-        "damage_reduction_percent": 30
-      },
+      "max_health": 150,
+      "move_speed_px_per_second": 170,
+      "damage_reduction_percent": 30},
       "weapon": {
-        "id": "guardian_sword",
-        "display_name": "Bulwark Sword",
-        "attack_type": "melee",
-        "damage": 12,
-        "attack_cooldown_seconds": 0.6,
-        "range_px": 48,
-        "projectile_speed_px_per_second": 0
-      },
+      "id": "guardian_sword",
+      "display_name": "Bulwark Sword",
+      "attack_type": "melee",
+      "damage": 12,
+      "attack_cooldown_seconds": 0.6,
+      "range_px": 48,
+      "projectile_speed_px_per_second": 0},
       "ability_1": {
-        "id": "guardian_shield_bash",
-        "display_name": "Shield Bash",
-        "description": "Stuns the enemy in front for a moment.",
-        "cooldown_seconds": 6.0
-      },
+      "id": "guardian_shield_bash",
+      "display_name": "Shield Bash",
+      "description": "Stuns the enemy in front for a moment.",
+      "cooldown_seconds": 6.0},
       "ability_2": {
-        "id": "guardian_taunt",
-        "display_name": "Taunt",
-        "description": "Forces nearby enemies to target the Guardian.",
-        "cooldown_seconds": 10.0
-      },
+      "id": "guardian_taunt",
+      "display_name": "Taunt",
+      "description": "Forces nearby enemies to target the Guardian.",
+      "cooldown_seconds": 10.0},
       "ability_3": {
-        "id": "guardian_fortify",
-        "display_name": "Fortify",
-        "description": "Greatly reduces damage taken for a short time.",
-        "cooldown_seconds": 18.0
-      },
+      "id": "guardian_fortify",
+      "display_name": "Fortify",
+      "description": "Greatly reduces damage taken for a short time.",
+      "cooldown_seconds": 18.0},
       "passive": {
-        "id": "guardian_thick_skin",
-        "display_name": "Thick Skin",
-        "description": "Takes less damage from all sources."
-      }
+      "id": "guardian_thick_skin",
+      "display_name": "Thick Skin",
+      "description": "Takes less damage from all sources."}
     }
   ]
 }
