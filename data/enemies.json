@@ -1,0 +1,48 @@
+{
+  "enemies": [
+  {
+      "id": "skeleton_grunt",
+      "display_name": "Skeleton Grunt",
+      "type": "regular",
+      "max_health": 30,
+      "move_speed_px_per_second": 90,
+      "detection_range_px": 200,
+      "basic_attack": {
+      "attack_type": "melee",
+      "damage": 5,
+      "attack_range_px": 32,
+      "attack_cooldown_seconds": 1.0,
+      "keep_distance_px": 0,
+      "projectile_speed_px_per_second": 0}
+    },
+    {
+      "id": "grave_warden",
+      "display_name": "Grave Warden",
+      "type": "boss",
+      "max_health": 500,
+      "move_speed_px_per_second": 0,
+      "detection_range_px": 0,
+      "boss": {
+      "phase_2_health_percent": 50,
+      "attack_wait_seconds_phase_1": 2.0,
+      "attack_wait_seconds_phase_2": 1.4,
+      "attacks": [
+          {
+            "id": "grave_warden_slam",
+            "display_name": "Slam",
+            "damage": 15},
+          {
+            "id": "grave_warden_sweep",
+            "display_name": "Sweep",
+            "damage": 10
+          },
+          {
+            "id": "grave_warden_bone_volley",
+            "display_name": "Bone Volley",
+            "damage": 8
+          }
+      ]
+      }
+    }
+  ]
+}

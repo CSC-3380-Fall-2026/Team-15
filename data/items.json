@@ -1,0 +1,14 @@
+{
+  "items": [
+    {
+    "id": "health_potion",
+      "display_name": "Health Potion",
+      "description": "Restores a small amount of health when used.",
+      "type": "consumable",
+      "max_stack": 5,
+      "consumable": {
+      "effect_type": "heal",
+      "amount": 30}
+    }
+  ]
+}
