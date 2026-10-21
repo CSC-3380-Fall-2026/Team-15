@@ -3,6 +3,11 @@ using System;
 
 public partial class Player : CharacterBody2D
 {
+
+    [ExportGroup("Health Stats")]
+    [Export] public int MaxHealth = 100;
+    [Export] public int CurrentHealth = 100;
+
 	[ExportGroup("Movement & Dodge Stats")]
 	[Export] public float MoveSpeed = 200f;
     [Export] public float DodgeSpeed = 600f;
@@ -15,6 +20,8 @@ public partial class Player : CharacterBody2D
     [Export] public string MoveUpAction = "move_up";
     [Export] public string MoveDownAction = "move_down";
     [Export] public string DodgeAction = "dodge";
+
+
 
     private bool _isDodging = false;
     private float _dodgeTimer = 0f;
@@ -52,6 +59,26 @@ public partial class Player : CharacterBody2D
 
         Velocity = inputDir * MoveSpeed;
         MoveAndSlide();
+    }
+    public void TakeDamage(int damageAmount)
+    {
+        if(_isDodging)
+        {
+            return;
+        }
+
+        CurrentHealth -= damageAmount;
+        GD.Print($"Player took {damageAmount} damage. Health: {CurrentHealth}");
+
+        if (CurrentHealth <= 0)
+        {
+            Die();
+        }
+    }
+
+    private void Die()
+    {
+        QueueFree();
     }
    
 }
