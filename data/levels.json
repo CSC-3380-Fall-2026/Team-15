@@ -9,33 +9,96 @@
       "tile_size_px": 32,
       "start_room_id": "level_1_room_1",
       "rooms": [
-        {
+      {
           "id": "level_1_room_1",
           "type": "combat",
           "next_room_ids": ["level_1_room_2"],
+          "obstacles": [
+            { "x_tile": 5, "y_tile": 4, "width_tiles": 2, "height_tiles": 2 },
+            { "x_tile": 13, "y_tile": 9, "width_tiles": 2, "height_tiles": 2 }
+        ],
           "combat": {
-          "enemy_slot_1": { "enemy_id": "skeleton_grunt" },
-          "enemy_slot_2": { "enemy_id": "skeleton_grunt" },
-          "enemy_slot_3": { "enemy_id": "skeleton_grunt" }}
+            "enemy_slot_1": { "enemy_id": "skeleton_grunt" },
+            "enemy_slot_2": { "enemy_id": "skeleton_grunt" },
+            "enemy_slot_3": { "enemy_id": "skeleton_grunt" }
+          }
         },
         {
-        "id": "level_1_room_2",
-        "type": "treasure",
-        "next_room_ids": ["level_1_room_3"],
-        "treasure": {
-        "item_id": "health_potion"}
+          "id": "level_1_room_2",
+          "type": "combat",
+          "next_room_ids": ["level_1_room_3"],
+          "obstacles": [
+            { "x_tile": 9, "y_tile": 3, "width_tiles": 2, "height_tiles": 3 },
+            { "x_tile": 4, "y_tile": 10, "width_tiles": 3, "height_tiles": 2 }
+          ],
+          "combat": {
+            "enemy_slot_1": { "enemy_id": "skeleton_grunt" },
+            "enemy_slot_2": { "enemy_id": "skeleton_grunt" },
+            "enemy_slot_3": { "enemy_id": "skeleton_archer" }
+        }
         },
         {
-        "id": "level_1_room_3",
-        "type": "rest",
-        "next_room_ids": ["level_1_room_4"]},
+          "id": "level_1_room_3",
+          "type": "treasure",
+          "next_room_ids": ["level_1_room_4"],
+          "obstacles": [],
+          "treasure": { "item_id": "health_potion" }
+        },
         {
-        "id": "level_1_room_4",
+          "id": "level_1_room_4",
+          "type": "combat",
+          "next_room_ids": ["level_1_room_5"],
+          "obstacles": [
+            { "x_tile": 6, "y_tile": 6, "width_tiles": 2, "height_tiles": 2 },
+            { "x_tile": 12, "y_tile": 6, "width_tiles": 2, "height_tiles": 2 }
+          ],
+          "combat": {
+            "enemy_slot_1": { "enemy_id": "skeleton_grunt" },
+            "enemy_slot_2": { "enemy_id": "skeleton_archer" },
+            "enemy_slot_3": { "enemy_id": "skeleton_archer" }
+        }
+        },
+        {
+          "id": "level_1_room_5",
+          "type": "combat",
+          "next_room_ids": ["level_1_room_6"],
+          "obstacles": [
+            { "x_tile": 3, "y_tile": 3, "width_tiles": 4, "height_tiles": 1 },
+            { "x_tile": 13, "y_tile": 11, "width_tiles": 4, "height_tiles": 1 }
+          ],
+          "combat": {
+            "enemy_slot_1": { "enemy_id": "skeleton_grunt" },
+            "enemy_slot_2": { "enemy_id": "skeleton_grunt" },
+            "enemy_slot_3": { "enemy_id": "skeleton_archer" }
+          }
+      },
+        {
+          "id": "level_1_room_6",
+          "type": "combat",
+          "next_room_ids": ["level_1_room_7"],
+          "obstacles": [
+            { "x_tile": 8, "y_tile": 5, "width_tiles": 1, "height_tiles": 5 },
+            { "x_tile": 14, "y_tile": 3, "width_tiles": 2, "height_tiles": 2 }
+          ],
+          "combat": {
+            "enemy_slot_1": { "enemy_id": "skeleton_grunt" },
+            "enemy_slot_2": { "enemy_id": "skeleton_archer" },
+            "enemy_slot_3": { "enemy_id": "skeleton_archer" }
+          }
+        },
+        {
+          "id": "level_1_room_7",
+          "type": "rest",
+          "next_room_ids": ["level_1_room_8"],
+          "obstacles": []
+        },
+        {
+          "id": "level_1_room_8",
           "type": "boss",
           "next_room_ids": [],
-          "boss": {
-          "boss_id": "grave_warden"}
-        }
+          "obstacles": [],
+          "boss": { "boss_id": "grave_warden" }
+}
       ]
     }
   ]
