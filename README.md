@@ -18,9 +18,18 @@ Beyond the Last Goodbye is a single player, 2D dungeon crawler, about loss & hop
 
 # Important Links
 Kanban Board: (https://trello.com/b/pkMnrOM0/beyond-the-last-goodbye)
-\
 Designs: [link]\
-Styles Guide(s): [link]
+Styles Guide(s): 
+
+ # Class Ability Designs
+  Design Lead: Isaac Moreno
+
+  - [Guardian ability sheet](guardian_ability_sheet.md)
+  - [Ranger ability sheet](ranger_ability_sheet.md)
+  - [Arcanist ability sheet](arcanist_ability_sheet.md)
+  - [Combined PDF](class_ability_sheets.pdf)
+
+  ![Ability layout example](ability_layout.png)
 
 ## How to Run Dev and Test Environment
 
