@@ -2,8 +2,11 @@
 
 [ext_resource type="PackedScene" uid="uid://ctokb4tylk778" path="res://scenes/player.tscn" id="1_1ja1v"]
 [ext_resource type="PackedScene" uid="uid://bxjoou2yu8nxm" path="res://scenes/BasicMeleeEnemy.tscn" id="2_480vt"]
+[ext_resource type="PackedScene" uid="uid://c8ak5lfwfjx4q" path="res://scenes/HUD.tscn" id="3_480vt"]
 
 [node name="CombatTest" type="Node2D" unique_id=383508805]
+
+[node name="Hud" parent="." unique_id=343115410 instance=ExtResource("3_480vt")]
 
 [node name="Player" parent="." unique_id=1436661040 instance=ExtResource("1_1ja1v")]
 position = Vector2(135, 133)
