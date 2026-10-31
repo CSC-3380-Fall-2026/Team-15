@@ -1,14 +1,14 @@
 # Beyond The Last Goodbye : Team 15
 # Members
 Project Manager: Justin Mexil (@justin2flyy)\
-Communications Lead: Antonio Johnson ([johnsonantonio2004)\
-Git Master: [Name] ([GitHub Name])\
-Design Lead: [Name] ([GitHub Name])\
-Quality Assurance Tester: [Name] ([GitHub Name])
+Communications Lead: Antonio Johnson (johnsonantonio2004)\
+Git Master: Javin Veznat ([GitHub Name])\
+Design Lead: Isaac Moreno ([GitHub Name])\
+Quality Assurance Tester: Jacob Wear ([GitHub Name])
 
 # About Our Software
 
-Describe a little about what the project is about here.
+Beyond The Last Goodbye is a live-action RPG that contains multiple classes and dungeon-crawling gameplay.
 ## Platforms Tested on
 - MacOS
 - Android
