@@ -110,6 +110,8 @@ The Output should show `Beyond The Last Goodbye loaded`. You may also see two "i
 | Attack | Left mouse button |
 | Ability 1 / 2 / 3 | Q / E / R |
 | Pause | Esc |
+| Interact | F |
+| Quick item slots 1 / 2 / 3 | 1 / 2 / 3 |
 
 ### Running the Tests
 From inside the Team-15 folder:
