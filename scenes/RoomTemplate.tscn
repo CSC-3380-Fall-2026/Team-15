@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://j1uh5nqlowy6"]
+
+[ext_resource type="Script" uid="uid://bdlharojuo3ba" path="res://scripts/RoomTemplate.cs" id="1_r8p6r"]
+[ext_resource type="Texture2D" uid="uid://ci521aw2cq7lh" path="res://assets/placeholder/placeholder_tiles.png" id="1_swihy"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_r8p6r"]
+texture = ExtResource("1_swihy")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+1:0/0 = 0
+2:0/0 = 0
+2:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-16, -16, 16, -16, 16, 16, -16, 16)
+
+[sub_resource type="TileSet" id="TileSet_cwmj4"]
+tile_size = Vector2i(32, 32)
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_r8p6r")
+
+[node name="RoomTemplate" type="Node2D" unique_id=432010201]
+script = ExtResource("1_r8p6r")
+
+[node name="Tiles" type="TileMapLayer" parent="." unique_id=1827768529]
+tile_set = SubResource("TileSet_cwmj4")
