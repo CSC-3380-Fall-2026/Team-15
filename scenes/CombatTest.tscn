@@ -3,6 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://ctokb4tylk778" path="res://scenes/player.tscn" id="1_1ja1v"]
 [ext_resource type="PackedScene" uid="uid://bxjoou2yu8nxm" path="res://scenes/BasicMeleeEnemy.tscn" id="2_480vt"]
 [ext_resource type="PackedScene" uid="uid://c8ak5lfwfjx4q" path="res://scenes/HUD.tscn" id="3_480vt"]
+[ext_resource type="PackedScene" uid="uid://w367rfwkglge" path="res://scenes/RangedEnemy.tscn" id="4_84fr5"]
 
 [node name="CombatTest" type="Node2D" unique_id=383508805]
 
@@ -13,3 +14,6 @@ position = Vector2(135, 133)
 
 [node name="BasicMeleeEnemy" parent="." unique_id=650637429 instance=ExtResource("2_480vt")]
 position = Vector2(897, 449)
+
+[node name="RangedEnemy" parent="." unique_id=677254687 instance=ExtResource("4_84fr5")]
+position = Vector2(873, 251)

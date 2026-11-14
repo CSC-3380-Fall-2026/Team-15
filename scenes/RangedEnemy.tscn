@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://w367rfwkglge"]
+
+[ext_resource type="Script" uid="uid://b1h421nwk4o4c" path="res://scripts/BasicRangedEnemy.cs" id="1_dfo0x"]
+[ext_resource type="PackedScene" uid="uid://dl8a3ocuwuopl" path="res://scenes/Projectile.tscn" id="2_wltc5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ddi0e"]
+size = Vector2(40, 40)
+
+[node name="RangedEnemy" type="CharacterBody2D" unique_id=677254687]
+motion_mode = 1
+script = ExtResource("1_dfo0x")
+ProjectileScene = ExtResource("2_wltc5")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=657542817]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=664069222]
+position = Vector2(20, 20)
+shape = SubResource("RectangleShape2D_ddi0e")
