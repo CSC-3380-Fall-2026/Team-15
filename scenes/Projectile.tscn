@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://dl8a3ocuwuopl"]
+
+[ext_resource type="Script" uid="uid://c57tyffrciq3e" path="res://scripts/Projectile.cs" id="1_dprbf"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_ddi0e"]
+radius = 16.0
+height = 16.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ddi0e"]
+radius = 11.0
+
+[node name="Projectile" type="Area2D" unique_id=448098999]
+script = ExtResource("1_dprbf")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="." unique_id=635406316]
+scale = Vector2(0.62514186, 1.3124993)
+mesh = SubResource("SphereMesh_ddi0e")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1225814546]
+shape = SubResource("CircleShape2D_ddi0e")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
