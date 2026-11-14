@@ -3,12 +3,19 @@ using System;
 
 public partial class Player : CharacterBody2D
 {
+    [Signal] public delegate void HealthChangedEventHandler(int currentHealth, int maxHealth);
+    [Signal] public delegate void ManaChangedEventHandler(int currentMana, int maxMana);
+    [Signal] public delegate void CooldownChangedEventHandler(float currentCooldown, float maxCooldown);
 
-    [ExportGroup("Health Stats")]
+    [ExportGroup("Health & Mana Stats")]
     [Export] public int MaxHealth = 100;
     [Export] public int CurrentHealth = 100;
+    [Export] public int MaxMana = 100;
+    [Export] public int CurrentMana = 100;
+    [Export] public float CurrentCooldown = 1.0f;
+    [Export] public float MaxCooldown = 1.0f;
 
-	[ExportGroup("Movement & Dodge Stats")]
+    [ExportGroup("Movement & Dodge Stats")]
 	[Export] public float MoveSpeed = 200f;
     [Export] public float DodgeSpeed = 600f;
     [Export] public float DodgeDuration = 0.15f;
@@ -27,6 +34,20 @@ public partial class Player : CharacterBody2D
     private float _dodgeTimer = 0f;
     private float _cooldownTimer = 0f;
     private Vector2 _dodgeDirection = Vector2.Zero;
+
+
+    public override void _EnterTree()
+    {
+        AddToGroup("Player");
+    }
+    public override void _Ready()
+    {
+
+        EmitSignal(SignalName.HealthChanged, CurrentHealth, MaxHealth);
+        EmitSignal(SignalName.ManaChanged, CurrentMana, MaxMana);
+        EmitSignal(SignalName.CooldownChanged, CurrentCooldown, MaxCooldown);
+
+    }
 
     public override void _PhysicsProcess(double delta)
     {
@@ -69,6 +90,8 @@ public partial class Player : CharacterBody2D
 
         CurrentHealth -= damageAmount;
         GD.Print($"Player took {damageAmount} damage. Health: {CurrentHealth}");
+
+        EmitSignal(SignalName.HealthChanged, CurrentHealth, MaxHealth);
 
         if (CurrentHealth <= 0)
         {
