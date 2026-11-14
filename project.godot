@@ -86,3 +86,8 @@ ability_3={
 rendering_device/driver.windows="d3d12"
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
+
+[autoload]
+
+GameDataLoader="*res://scripts/Data/GameDataLoader.cs"
+
