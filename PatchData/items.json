@@ -1,0 +1,110 @@
+[
+  {
+	"Id": "health_tonic",
+	"Name": "Ember Tonic",
+	"Kind": "consumable",
+	"Description": "Restore 60 health.",
+	"Power": 60,
+	"Price": 24,
+	"ClassId": ""
+  },
+  {
+	"Id": "mana_tonic",
+	"Name": "Moonwell",
+	"Kind": "consumable",
+	"Description": "Restore 65 mana.",
+	"Power": 65,
+	"Price": 20,
+	"ClassId": ""
+  },
+  {
+	"Id": "antidote",
+	"Name": "Clearwater",
+	"Kind": "consumable",
+	"Description": "Remove burn, slow and poison.",
+	"Power": 0,
+	"Price": 12,
+	"ClassId": ""
+  },
+  {
+	"Id": "fire_bomb",
+	"Name": "Sunseed",
+	"Kind": "consumable",
+	"Description": "Burn all foes within 170 pixels.",
+	"Power": 42,
+	"Price": 30,
+	"ClassId": ""
+  },
+  {
+	"Id": "ward_draught",
+	"Name": "Glass Ward",
+	"Kind": "consumable",
+	"Description": "Become invulnerable for 4 seconds.",
+	"Power": 4,
+	"Price": 32,
+	"ClassId": ""
+  },
+  {
+	"Id": "haste_draught",
+	"Name": "Swiftleaf",
+	"Kind": "consumable",
+	"Description": "Move 45% faster for 8 seconds.",
+	"Power": 8,
+	"Price": 20,
+	"ClassId": ""
+  },
+  {
+	"Id": "guardian_weapon",
+	"Name": "Oathkeeper",
+	"Kind": "weapon",
+	"Description": "Exclusive Guardian weapon. +15% damage when equipped.",
+	"Power": 15,
+	"Price": 0,
+	"ClassId": "guardian"
+  },
+  {
+	"Id": "ranger_weapon",
+	"Name": "Thread of Dawn",
+	"Kind": "weapon",
+	"Description": "Exclusive Ranger weapon. +15% damage when equipped.",
+	"Power": 15,
+	"Price": 0,
+	"ClassId": "ranger"
+  },
+  {
+	"Id": "arcanist_weapon",
+	"Name": "Lantern Staff",
+	"Kind": "weapon",
+	"Description": "Exclusive Arcanist weapon. +15% damage when equipped.",
+	"Power": 15,
+	"Price": 0,
+	"ClassId": "arcanist"
+  },
+  {
+	"Id": "guardian_armor",
+	"Name": "Pilgrim Plate",
+	"Kind": "armor",
+	"Description": "Exclusive Guardian armor. Reduces incoming damage by 15%.",
+	"Power": 15,
+	"Price": 90,
+	"ClassId": "guardian"
+  },
+  {
+	"Id": "ranger_armor",
+	"Name": "Wayfarer Mantle",
+	"Kind": "armor",
+	"Description": "Exclusive Ranger armor. Reduces incoming damage by 15%.",
+	"Power": 15,
+	"Price": 90,
+	"ClassId": "ranger"
+  },
+  {
+	"Id": "arcanist_armor",
+	"Name": "Starlit Vestment",
+	"Kind": "armor",
+	"Description": "Exclusive Arcanist armor. Reduces incoming damage by 15%.",
+	"Power": 15,
+	"Price": 90,
+	"ClassId": "arcanist"
+  }
+]

@@ -1,0 +1,1654 @@
+[
+  {
+	"Id": "guardian",
+	"Texture": "res://Art/Actors/guardian.svg",
+	"AuthoredFrames": 36,
+	"Slots": 48,
+	"Animations": [
+	  {
+		"Name": "idle",
+		"Frames": [
+		  0,
+		  1,
+		  2,
+		  3
+		],
+		"Fps": 7,
+		"Loop": true
+	  },
+	  {
+		"Name": "move",
+		"Frames": [
+		  4,
+		  5,
+		  6,
+		  7
+		],
+		"Fps": 11,
+		"Loop": true
+	  },
+	  {
+		"Name": "attack",
+		"Frames": [
+		  8,
+		  9,
+		  10,
+		  11
+		],
+		"Fps": 11,
+		"Loop": false
+	  },
+	  {
+		"Name": "hurt",
+		"Frames": [
+		  12,
+		  13,
+		  14,
+		  15
+		],
+		"Fps": 11,
+		"Loop": false
+	  },
+	  {
+		"Name": "death",
+		"Frames": [
+		  16,
+		  17,
+		  18,
+		  19
+		],
+		"Fps": 11,
+		"Loop": false
+	  },
+	  {
+		"Name": "dodge",
+		"Frames": [
+		  20,
+		  21,
+		  22,
+		  23
+		],
+		"Fps": 11,
+		"Loop": true
+	  },
+	  {
+		"Name": "skill1",
+		"Frames": [
+		  24,
+		  25,
+		  26,
+		  27
+		],
+		"Fps": 11,
+		"Loop": false
+	  },
+	  {
+		"Name": "skill2",
+		"Frames": [
+		  28,
+		  29,
+		  30,
+		  31
+		],
+		"Fps": 11,
+		"Loop": false
+	  },
+	  {
+		"Name": "skill3",
+		"Frames": [
+		  32,
+		  33,
+		  34,
+		  35
+		],
+		"Fps": 11,
+		"Loop": false
+	  },
+	  {
+		"Name": "passive",
+		"Frames": [
+		  36,
+		  37,
+		  38,
+		  39
+		],
+		"Fps": 11,
+		"Loop": true
+	  },
+	  {
+		"Name": "idle_back",
+		"Frames": [
+		  40,
+		  41,
+		  42,
+		  43
+		],
+		"Fps": 7,
+		"Loop": true
+	  },
+	  {
+		"Name": "move_back",
+		"Frames": [
+		  44,
+		  45,
+		  46,
+		  47
+		],
+		"Fps": 11,
+		"Loop": true
+	  }
+	]
+  },
+  {
+	"Id": "ranger",
+	"Texture": "res://Art/Actors/ranger.svg",
+	"AuthoredFrames": 36,
+	"Slots": 48,
+	"Animations": [
+	  {
+		"Name": "idle",
+		"Frames": [
+		  0,
+		  1,
+		  2,
+		  3
+		],
+		"Fps": 7,
+		"Loop": true
+	  },
+	  {
+		"Name": "move",
+		"Frames": [
+		  4,
+		  5,
+		  6,
+		  7
+		],
+		"Fps": 11,
+		"Loop": true
+	  },
+	  {
+		"Name": "attack",
+		"Frames": [
+		  8,
+		  9,
+		  10,
+		  11
+		],
+		"Fps": 11,
+		"Loop": false
+	  },
+	  {
+		"Name": "hurt",
+		"Frames": [
+		  12,
+		  13,
+		  14,
+		  15
+		],
+		"Fps": 11,
+		"Loop": false
+	  },
+	  {
+		"Name": "death",
+		"Frames": [
+		  16,
+		  17,
+		  18,
+		  19
+		],
+		"Fps": 11,
+		"Loop": false
+	  },
+	  {
+		"Name": "dodge",
+		"Frames": [
+		  20,
+		  21,
+		  22,
+		  23
+		],
+		"Fps": 11,
+		"Loop": true
+	  },
+	  {
+		"Name": "skill1",
+		"Frames": [
+		  24,
+		  25,
+		  26,
+		  27
+		],
+		"Fps": 11,
+		"Loop": false
+	  },
+	  {
+		"Name": "skill2",
+		"Frames": [
+		  28,
+		  29,
+		  30,
+		  31
+		],
+		"Fps": 11,
+		"Loop": false
+	  },
+	  {
+		"Name": "skill3",
+		"Frames": [
+		  32,
+		  33,
+		  34,
+		  35
+		],
+		"Fps": 11,
+		"Loop": false
+	  },
+	  {
+		"Name": "passive",
+		"Frames": [
+		  36,
+		  37,
+		  38,
+		  39
+		],
+		"Fps": 11,
+		"Loop": true
+	  },
+	  {
+		"Name": "idle_back",
+		"Frames": [
+		  40,
+		  41,
+		  42,
+		  43
+		],
+		"Fps": 7,
+		"Loop": true
+	  },
+	  {
+		"Name": "move_back",
+		"Frames": [
+		  44,
+		  45,
+		  46,
+		  47
+		],
+		"Fps": 11,
+		"Loop": true
+	  }
+	]
+  },
+  {
+	"Id": "arcanist",
+	"Texture": "res://Art/Actors/arcanist.svg",
+	"AuthoredFrames": 36,
+	"Slots": 48,
+	"Animations": [
+	  {
+		"Name": "idle",
+		"Frames": [
+		  0,
+		  1,
+		  2,
+		  3
+		],
+		"Fps": 7,
+		"Loop": true
+	  },
+	  {
+		"Name": "move",
+		"Frames": [
+		  4,
+		  5,
+		  6,
+		  7
+		],
+		"Fps": 11,
+		"Loop": true
+	  },
+	  {
+		"Name": "attack",
+		"Frames": [
+		  8,
+		  9,
+		  10,
+		  11
+		],
+		"Fps": 11,
+		"Loop": false
+	  },
+	  {
+		"Name": "hurt",
+		"Frames": [
+		  12,
+		  13,
+		  14,
+		  15
+		],
+		"Fps": 11,
+		"Loop": false
+	  },
+	  {
+		"Name": "death",
+		"Frames": [
+		  16,
+		  17,
+		  18,
+		  19
+		],
+		"Fps": 11,
+		"Loop": false
+	  },
+	  {
+		"Name": "dodge",
+		"Frames": [
+		  20,
+		  21,
+		  22,
+		  23
+		],
+		"Fps": 11,
+		"Loop": true
+	  },
+	  {
+		"Name": "skill1",
+		"Frames": [
+		  24,
+		  25,
+		  26,
+		  27
+		],
+		"Fps": 11,
+		"Loop": false
+	  },
+	  {
+		"Name": "skill2",
+		"Frames": [
+		  28,
+		  29,
+		  30,
+		  31
+		],
+		"Fps": 11,
+		"Loop": false
+	  },
+	  {
+		"Name": "skill3",
+		"Frames": [
+		  32,
+		  33,
+		  34,
+		  35
+		],
+		"Fps": 11,
+		"Loop": false
+	  },
+	  {
+		"Name": "passive",
+		"Frames": [
+		  36,
+		  37,
+		  38,
+		  39
+		],
+		"Fps": 11,
+		"Loop": true
+	  },
+	  {
+		"Name": "idle_back",
+		"Frames": [
+		  40,
+		  41,
+		  42,
+		  43
+		],
+		"Fps": 7,
+		"Loop": true
+	  },
+	  {
+		"Name": "move_back",
+		"Frames": [
+		  44,
+		  45,
+		  46,
+		  47
+		],
+		"Fps": 11,
+		"Loop": true
+	  }
+	]
+  },
+  {
+	"Id": "echo",
+	"Texture": "res://Art/Actors/echo.svg",
+	"AuthoredFrames": 24,
+	"Slots": 32,
+	"Animations": [
+	  {
+		"Name": "idle",
+		"Frames": [
+		  0,
+		  1,
+		  2,
+		  3
+		],
+		"Fps": 7,
+		"Loop": true
+	  },
+	  {
+		"Name": "move",
+		"Frames": [
+		  4,
+		  5,
+		  6,
+		  7
+		],
+		"Fps": 11,
+		"Loop": true
+	  },
+	  {
+		"Name": "attack",
+		"Frames": [
+		  8,
+		  9,
+		  10,
+		  11
+		],
+		"Fps": 11,
+		"Loop": false
+	  },
+	  {
+		"Name": "hurt",
+		"Frames": [
+		  12,
+		  13,
+		  14,
+		  15
+		],
+		"Fps": 11,
+		"Loop": false
+	  },
+	  {
+		"Name": "death",
+		"Frames": [
+		  16,
+		  17,
+		  18,
+		  19
+		],
+		"Fps": 11,
+		"Loop": false
+	  },
+	  {
+		"Name": "charge",
+		"Frames": [
+		  20,
+		  21,
+		  22,
+		  23
+		],
+		"Fps": 11,
+		"Loop": true
+	  },
+	  {
+		"Name": "cast",
+		"Frames": [
+		  24,
+		  25,
+		  26,
+		  27
+		],
+		"Fps": 11,
+		"Loop": true
+	  },
+	  {
+		"Name": "recover",
+		"Frames": [
+		  28,
+		  29,
+		  30,
+		  31
+		],
+		"Fps": 11,
+		"Loop": true
+	  }
+	]
+  },
+  {
+	"Id": "stalker",
+	"Texture": "res://Art/Actors/stalker.svg",
+	"AuthoredFrames": 24,
+	"Slots": 32,
+	"Animations": [
+	  {
+		"Name": "idle",
+		"Frames": [
+		  0,
+		  1,
+		  2,
+		  3
+		],
+		"Fps": 7,
+		"Loop": true
+	  },
+	  {
+		"Name": "move",
+		"Frames": [
+		  4,
+		  5,
+		  6,
+		  7
+		],
+		"Fps": 11,
+		"Loop": true
+	  },
+	  {
+		"Name": "attack",
+		"Frames": [
+		  8,
+		  9,
+		  10,
+		  11
+		],
+		"Fps": 11,
+		"Loop": false
+	  },
+	  {
+		"Name": "hurt",
+		"Frames": [
+		  12,
+		  13,
+		  14,
+		  15
+		],
+		"Fps": 11,
+		"Loop": false
+	  },
+	  {
+		"Name": "death",
+		"Frames": [
+		  16,
+		  17,
+		  18,
+		  19
+		],
+		"Fps": 11,
+		"Loop": false
+	  },
+	  {
+		"Name": "charge",
+		"Frames": [
+		  20,
+		  21,
+		  22,
+		  23
+		],
+		"Fps": 11,
+		"Loop": true
+	  },
+	  {
+		"Name": "cast",
+		"Frames": [
+		  24,
+		  25,
+		  26,
+		  27
+		],
+		"Fps": 11,
+		"Loop": true
+	  },
+	  {
+		"Name": "recover",
+		"Frames": [
+		  28,
+		  29,
+		  30,
+		  31
+		],
+		"Fps": 11,
+		"Loop": true
+	  }
+	]
+  },
+  {
+	"Id": "archer",
+	"Texture": "res://Art/Actors/archer.svg",
+	"AuthoredFrames": 24,
+	"Slots": 32,
+	"Animations": [
+	  {
+		"Name": "idle",
+		"Frames": [
+		  0,
+		  1,
+		  2,
+		  3
+		],
+		"Fps": 7,
+		"Loop": true
+	  },
+	  {
+		"Name": "move",
+		"Frames": [
+		  4,
+		  5,
+		  6,
+		  7
+		],
+		"Fps": 11,
+		"Loop": true
+	  },
+	  {
+		"Name": "attack",
+		"Frames": [
+		  8,
+		  9,
+		  10,
+		  11
+		],
+		"Fps": 11,
+		"Loop": false
+	  },
+	  {
+		"Name": "hurt",
+		"Frames": [
+		  12,
+		  13,
+		  14,
+		  15
+		],
+		"Fps": 11,
+		"Loop": false
+	  },
+	  {
+		"Name": "death",
+		"Frames": [
+		  16,
+		  17,
+		  18,
+		  19
+		],
+		"Fps": 11,
+		"Loop": false
+	  },
+	  {
+		"Name": "charge",
+		"Frames": [
+		  20,
+		  21,
+		  22,
+		  23
+		],
+		"Fps": 11,
+		"Loop": true
+	  },
+	  {
+		"Name": "cast",
+		"Frames": [
+		  24,
+		  25,
+		  26,
+		  27
+		],
+		"Fps": 11,
+		"Loop": true
+	  },
+	  {
+		"Name": "recover",
+		"Frames": [
+		  28,
+		  29,
+		  30,
+		  31
+		],
+		"Fps": 11,
+		"Loop": true
+	  }
+	]
+  },
+  {
+	"Id": "wisp",
+	"Texture": "res://Art/Actors/wisp.svg",
+	"AuthoredFrames": 24,
+	"Slots": 32,
+	"Animations": [
+	  {
+		"Name": "idle",
+		"Frames": [
+		  0,
+		  1,
+		  2,
+		  3
+		],
+		"Fps": 7,
+		"Loop": true
+	  },
+	  {
+		"Name": "move",
+		"Frames": [
+		  4,
+		  5,
+		  6,
+		  7
+		],
+		"Fps": 11,
+		"Loop": true
+	  },
+	  {
+		"Name": "attack",
+		"Frames": [
+		  8,
+		  9,
+		  10,
+		  11
+		],
+		"Fps": 11,
+		"Loop": false
+	  },
+	  {
+		"Name": "hurt",
+		"Frames": [
+		  12,
+		  13,
+		  14,
+		  15
+		],
+		"Fps": 11,
+		"Loop": false
+	  },
+	  {
+		"Name": "death",
+		"Frames": [
+		  16,
+		  17,
+		  18,
+		  19
+		],
+		"Fps": 11,
+		"Loop": false
+	  },
+	  {
+		"Name": "charge",
+		"Frames": [
+		  20,
+		  21,
+		  22,
+		  23
+		],
+		"Fps": 11,
+		"Loop": true
+	  },
+	  {
+		"Name": "cast",
+		"Frames": [
+		  24,
+		  25,
+		  26,
+		  27
+		],
+		"Fps": 11,
+		"Loop": true
+	  },
+	  {
+		"Name": "recover",
+		"Frames": [
+		  28,
+		  29,
+		  30,
+		  31
+		],
+		"Fps": 11,
+		"Loop": true
+	  }
+	]
+  },
+  {
+	"Id": "sentinel",
+	"Texture": "res://Art/Actors/sentinel.svg",
+	"AuthoredFrames": 24,
+	"Slots": 28,
+	"Animations": [
+	  {
+		"Name": "idle",
+		"Frames": [
+		  0,
+		  1,
+		  2,
+		  3
+		],
+		"Fps": 7,
+		"Loop": true
+	  },
+	  {
+		"Name": "move",
+		"Frames": [
+		  4,
+		  5,
+		  6,
+		  7
+		],
+		"Fps": 11,
+		"Loop": true
+	  },
+	  {
+		"Name": "attack",
+		"Frames": [
+		  8,
+		  9,
+		  10,
+		  11
+		],
+		"Fps": 11,
+		"Loop": false
+	  },
+	  {
+		"Name": "hurt",
+		"Frames": [
+		  12,
+		  13,
+		  14,
+		  15
+		],
+		"Fps": 11,
+		"Loop": false
+	  },
+	  {
+		"Name": "death",
+		"Frames": [
+		  16,
+		  17,
+		  18
+		],
+		"Fps": 11,
+		"Loop": false
+	  },
+	  {
+		"Name": "charge",
+		"Frames": [
+		  19,
+		  20,
+		  21
+		],
+		"Fps": 11,
+		"Loop": true
+	  },
+	  {
+		"Name": "cast",
+		"Frames": [
+		  22,
+		  23,
+		  24
+		],
+		"Fps": 11,
+		"Loop": true
+	  },
+	  {
+		"Name": "recover",
+		"Frames": [
+		  25,
+		  26,
+		  27
+		],
+		"Fps": 11,
+		"Loop": true
+	  }
+	]
+  },
+  {
+	"Id": "bomber",
+	"Texture": "res://Art/Actors/bomber.svg",
+	"AuthoredFrames": 24,
+	"Slots": 24,
+	"Animations": [
+	  {
+		"Name": "idle",
+		"Frames": [
+		  0,
+		  1,
+		  2
+		],
+		"Fps": 7,
+		"Loop": true
+	  },
+	  {
+		"Name": "move",
+		"Frames": [
+		  3,
+		  4,
+		  5
+		],
+		"Fps": 11,
+		"Loop": true
+	  },
+	  {
+		"Name": "attack",
+		"Frames": [
+		  6,
+		  7,
+		  8
+		],
+		"Fps": 11,
+		"Loop": false
+	  },
+	  {
+		"Name": "hurt",
+		"Frames": [
+		  9,
+		  10,
+		  11
+		],
+		"Fps": 11,
+		"Loop": false
+	  },
+	  {
+		"Name": "death",
+		"Frames": [
+		  12,
+		  13,
+		  14
+		],
+		"Fps": 11,
+		"Loop": false
+	  },
+	  {
+		"Name": "charge",
+		"Frames": [
+		  15,
+		  16,
+		  17
+		],
+		"Fps": 11,
+		"Loop": true
+	  },
+	  {
+		"Name": "cast",
+		"Frames": [
+		  18,
+		  19,
+		  20
+		],
+		"Fps": 11,
+		"Loop": true
+	  },
+	  {
+		"Name": "recover",
+		"Frames": [
+		  21,
+		  22,
+		  23
+		],
+		"Fps": 11,
+		"Loop": true
+	  }
+	]
+  },
+  {
+	"Id": "healer",
+	"Texture": "res://Art/Actors/healer.svg",
+	"AuthoredFrames": 24,
+	"Slots": 24,
+	"Animations": [
+	  {
+		"Name": "idle",
+		"Frames": [
+		  0,
+		  1,
+		  2
+		],
+		"Fps": 7,
+		"Loop": true
+	  },
+	  {
+		"Name": "move",
+		"Frames": [
+		  3,
+		  4,
+		  5
+		],
+		"Fps": 11,
+		"Loop": true
+	  },
+	  {
+		"Name": "attack",
+		"Frames": [
+		  6,
+		  7,
+		  8
+		],
+		"Fps": 11,
+		"Loop": false
+	  },
+	  {
+		"Name": "hurt",
+		"Frames": [
+		  9,
+		  10,
+		  11
+		],
+		"Fps": 11,
+		"Loop": false
+	  },
+	  {
+		"Name": "death",
+		"Frames": [
+		  12,
+		  13,
+		  14
+		],
+		"Fps": 11,
+		"Loop": false
+	  },
+	  {
+		"Name": "charge",
+		"Frames": [
+		  15,
+		  16,
+		  17
+		],
+		"Fps": 11,
+		"Loop": true
+	  },
+	  {
+		"Name": "cast",
+		"Frames": [
+		  18,
+		  19,
+		  20
+		],
+		"Fps": 11,
+		"Loop": true
+	  },
+	  {
+		"Name": "recover",
+		"Frames": [
+		  21,
+		  22,
+		  23
+		],
+		"Fps": 11,
+		"Loop": true
+	  }
+	]
+  },
+  {
+	"Id": "brute",
+	"Texture": "res://Art/Actors/brute.svg",
+	"AuthoredFrames": 24,
+	"Slots": 24,
+	"Animations": [
+	  {
+		"Name": "idle",
+		"Frames": [
+		  0,
+		  1,
+		  2
+		],
+		"Fps": 7,
+		"Loop": true
+	  },
+	  {
+		"Name": "move",
+		"Frames": [
+		  3,
+		  4,
+		  5
+		],
+		"Fps": 11,
+		"Loop": true
+	  },
+	  {
+		"Name": "attack",
+		"Frames": [
+		  6,
+		  7,
+		  8
+		],
+		"Fps": 11,
+		"Loop": false
+	  },
+	  {
+		"Name": "hurt",
+		"Frames": [
+		  9,
+		  10,
+		  11
+		],
+		"Fps": 11,
+		"Loop": false
+	  },
+	  {
+		"Name": "death",
+		"Frames": [
+		  12,
+		  13,
+		  14
+		],
+		"Fps": 11,
+		"Loop": false
+	  },
+	  {
+		"Name": "charge",
+		"Frames": [
+		  15,
+		  16,
+		  17
+		],
+		"Fps": 11,
+		"Loop": true
+	  },
+	  {
+		"Name": "cast",
+		"Frames": [
+		  18,
+		  19,
+		  20
+		],
+		"Fps": 11,
+		"Loop": true
+	  },
+	  {
+		"Name": "recover",
+		"Frames": [
+		  21,
+		  22,
+		  23
+		],
+		"Fps": 11,
+		"Loop": true
+	  }
+	]
+  },
+  {
+	"Id": "keeper",
+	"Texture": "res://Art/Actors/keeper.svg",
+	"AuthoredFrames": 36,
+	"Slots": 36,
+	"Animations": [
+	  {
+		"Name": "idle",
+		"Frames": [
+		  0,
+		  1,
+		  2
+		],
+		"Fps": 7,
+		"Loop": true
+	  },
+	  {
+		"Name": "move",
+		"Frames": [
+		  3,
+		  4,
+		  5
+		],
+		"Fps": 11,
+		"Loop": true
+	  },
+	  {
+		"Name": "attack",
+		"Frames": [
+		  6,
+		  7,
+		  8
+		],
+		"Fps": 11,
+		"Loop": false
+	  },
+	  {
+		"Name": "hurt",
+		"Frames": [
+		  9,
+		  10,
+		  11
+		],
+		"Fps": 11,
+		"Loop": false
+	  },
+	  {
+		"Name": "death",
+		"Frames": [
+		  12,
+		  13,
+		  14
+		],
+		"Fps": 11,
+		"Loop": false
+	  },
+	  {
+		"Name": "charge",
+		"Frames": [
+		  15,
+		  16,
+		  17
+		],
+		"Fps": 11,
+		"Loop": true
+	  },
+	  {
+		"Name": "cast",
+		"Frames": [
+		  18,
+		  19,
+		  20
+		],
+		"Fps": 11,
+		"Loop": true
+	  },
+	  {
+		"Name": "recover",
+		"Frames": [
+		  21,
+		  22,
+		  23
+		],
+		"Fps": 11,
+		"Loop": true
+	  },
+	  {
+		"Name": "phase2",
+		"Frames": [
+		  24,
+		  25,
+		  26
+		],
+		"Fps": 11,
+		"Loop": true
+	  },
+	  {
+		"Name": "attack2",
+		"Frames": [
+		  27,
+		  28,
+		  29
+		],
+		"Fps": 11,
+		"Loop": false
+	  },
+	  {
+		"Name": "attack3",
+		"Frames": [
+		  30,
+		  31,
+		  32
+		],
+		"Fps": 11,
+		"Loop": false
+	  },
+	  {
+		"Name": "victory",
+		"Frames": [
+		  33,
+		  34,
+		  35
+		],
+		"Fps": 11,
+		"Loop": true
+	  }
+	]
+  },
+  {
+	"Id": "huntsman",
+	"Texture": "res://Art/Actors/huntsman.svg",
+	"AuthoredFrames": 36,
+	"Slots": 36,
+	"Animations": [
+	  {
+		"Name": "idle",
+		"Frames": [
+		  0,
+		  1,
+		  2
+		],
+		"Fps": 7,
+		"Loop": true
+	  },
+	  {
+		"Name": "move",
+		"Frames": [
+		  3,
+		  4,
+		  5
+		],
+		"Fps": 11,
+		"Loop": true
+	  },
+	  {
+		"Name": "attack",
+		"Frames": [
+		  6,
+		  7,
+		  8
+		],
+		"Fps": 11,
+		"Loop": false
+	  },
+	  {
+		"Name": "hurt",
+		"Frames": [
+		  9,
+		  10,
+		  11
+		],
+		"Fps": 11,
+		"Loop": false
+	  },
+	  {
+		"Name": "death",
+		"Frames": [
+		  12,
+		  13,
+		  14
+		],
+		"Fps": 11,
+		"Loop": false
+	  },
+	  {
+		"Name": "charge",
+		"Frames": [
+		  15,
+		  16,
+		  17
+		],
+		"Fps": 11,
+		"Loop": true
+	  },
+	  {
+		"Name": "cast",
+		"Frames": [
+		  18,
+		  19,
+		  20
+		],
+		"Fps": 11,
+		"Loop": true
+	  },
+	  {
+		"Name": "recover",
+		"Frames": [
+		  21,
+		  22,
+		  23
+		],
+		"Fps": 11,
+		"Loop": true
+	  },
+	  {
+		"Name": "phase2",
+		"Frames": [
+		  24,
+		  25,
+		  26
+		],
+		"Fps": 11,
+		"Loop": true
+	  },
+	  {
+		"Name": "attack2",
+		"Frames": [
+		  27,
+		  28,
+		  29
+		],
+		"Fps": 11,
+		"Loop": false
+	  },
+	  {
+		"Name": "attack3",
+		"Frames": [
+		  30,
+		  31,
+		  32
+		],
+		"Fps": 11,
+		"Loop": false
+	  },
+	  {
+		"Name": "victory",
+		"Frames": [
+		  33,
+		  34,
+		  35
+		],
+		"Fps": 11,
+		"Loop": true
+	  }
+	]
+  },
+  {
+	"Id": "choir",
+	"Texture": "res://Art/Actors/choir.svg",
+	"AuthoredFrames": 28,
+	"Slots": 28,
+	"Animations": [
+	  {
+		"Name": "idle",
+		"Frames": [
+		  0,
+		  1,
+		  2
+		],
+		"Fps": 7,
+		"Loop": true
+	  },
+	  {
+		"Name": "move",
+		"Frames": [
+		  3,
+		  4,
+		  5
+		],
+		"Fps": 11,
+		"Loop": true
+	  },
+	  {
+		"Name": "attack",
+		"Frames": [
+		  6,
+		  7,
+		  8
+		],
+		"Fps": 11,
+		"Loop": false
+	  },
+	  {
+		"Name": "hurt",
+		"Frames": [
+		  9,
+		  10,
+		  11
+		],
+		"Fps": 11,
+		"Loop": false
+	  },
+	  {
+		"Name": "death",
+		"Frames": [
+		  12,
+		  13
+		],
+		"Fps": 11,
+		"Loop": false
+	  },
+	  {
+		"Name": "charge",
+		"Frames": [
+		  14,
+		  15
+		],
+		"Fps": 11,
+		"Loop": true
+	  },
+	  {
+		"Name": "cast",
+		"Frames": [
+		  16,
+		  17
+		],
+		"Fps": 11,
+		"Loop": true
+	  },
+	  {
+		"Name": "recover",
+		"Frames": [
+		  18,
+		  19
+		],
+		"Fps": 11,
+		"Loop": true
+	  },
+	  {
+		"Name": "phase2",
+		"Frames": [
+		  20,
+		  21
+		],
+		"Fps": 11,
+		"Loop": true
+	  },
+	  {
+		"Name": "attack2",
+		"Frames": [
+		  22,
+		  23
+		],
+		"Fps": 11,
+		"Loop": false
+	  },
+	  {
+		"Name": "attack3",
+		"Frames": [
+		  24,
+		  25
+		],
+		"Fps": 11,
+		"Loop": false
+	  },
+	  {
+		"Name": "victory",
+		"Frames": [
+		  26,
+		  27
+		],
+		"Fps": 11,
+		"Loop": true
+	  }
+	]
+  },
+  {
+	"Id": "farewell",
+	"Texture": "res://Art/Actors/farewell.svg",
+	"AuthoredFrames": 24,
+	"Slots": 24,
+	"Animations": [
+	  {
+		"Name": "idle",
+		"Frames": [
+		  0,
+		  1
+		],
+		"Fps": 7,
+		"Loop": true
+	  },
+	  {
+		"Name": "move",
+		"Frames": [
+		  2,
+		  3
+		],
+		"Fps": 11,
+		"Loop": true
+	  },
+	  {
+		"Name": "attack",
+		"Frames": [
+		  4,
+		  5
+		],
+		"Fps": 11,
+		"Loop": false
+	  },
+	  {
+		"Name": "hurt",
+		"Frames": [
+		  6,
+		  7
+		],
+		"Fps": 11,
+		"Loop": false
+	  },
+	  {
+		"Name": "death",
+		"Frames": [
+		  8,
+		  9
+		],
+		"Fps": 11,
+		"Loop": false
+	  },
+	  {
+		"Name": "charge",
+		"Frames": [
+		  10,
+		  11
+		],
+		"Fps": 11,
+		"Loop": true
+	  },
+	  {
+		"Name": "cast",
+		"Frames": [
+		  12,
+		  13
+		],
+		"Fps": 11,
+		"Loop": true
+	  },
+	  {
+		"Name": "recover",
+		"Frames": [
+		  14,
+		  15
+		],
+		"Fps": 11,
+		"Loop": true
+	  },
+	  {
+		"Name": "phase2",
+		"Frames": [
+		  16,
+		  17
+		],
+		"Fps": 11,
+		"Loop": true
+	  },
+	  {
+		"Name": "attack2",
+		"Frames": [
+		  18,
+		  19
+		],
+		"Fps": 11,
+		"Loop": false
+	  },
+	  {
+		"Name": "attack3",
+		"Frames": [
+		  20,
+		  21
+		],
+		"Fps": 11,
+		"Loop": false
+	  },
+	  {
+		"Name": "victory",
+		"Frames": [
+		  22,
+		  23
+		],
+		"Fps": 11,
+		"Loop": true
+	  }
+	]
+  }
+]

@@ -1,0 +1,754 @@
+[
+  {
+	"Id": 0,
+	"Name": "The House of Stillness",
+	"Memory": "An empty chair can hold a memory without holding you still.",
+	"FloorColor": "a79cab",
+	"AccentColor": "dec9dc",
+	"Rooms": [
+	  {
+		"Id": 0,
+		"Name": "Threshold",
+		"Kind": "combat",
+		"Links": [
+		  1
+		],
+		"Enemies": [
+		  "echo",
+		  "stalker",
+          "archer"
+		],
+		"Obstacles": [
+		  {
+			"X": 280,
+			"Y": 120,
+			"W": 48,
+			"H": 68
+		  },
+		  {
+			"X": 280,
+			"Y": 325,
+			"W": 48,
+			"H": 68
+		  }
+		],
+		"Chests": 0
+	  },
+	  {
+		"Id": 1,
+		"Name": "The Set Table",
+		"Kind": "combat",
+		"Links": [
+		  0,
+		  2,
+		  3
+		],
+		"Enemies": [
+		  "stalker",
+		  "archer",
+          "wisp"
+		],
+		"Obstacles": [
+		  {
+			"X": 205,
+			"Y": 135,
+			"W": 42,
+			"H": 48
+		  },
+		  {
+			"X": 380,
+			"Y": 325,
+			"W": 42,
+			"H": 48
+		  }
+		],
+		"Chests": 0
+	  },
+	  {
+		"Id": 2,
+		"Name": "The Quiet Font",
+		"Kind": "rest",
+		"Links": [
+		  1
+		],
+		"Enemies": [],
+		"Obstacles": [],
+		"Chests": 0
+	  },
+	  {
+		"Id": 3,
+		"Name": "Porcelain Gallery",
+		"Kind": "combat",
+		"Links": [
+		  1,
+		  4,
+		  5
+		],
+		"Enemies": [
+		  "wisp",
+		  "sentinel",
+          "bomber"
+		],
+		"Obstacles": [
+		  {
+			"X": 260,
+			"Y": 235,
+			"W": 120,
+			"H": 42
+		  }
+		],
+		"Chests": 0
+	  },
+	  {
+		"Id": 4,
+		"Name": "Reliquary",
+		"Kind": "treasure",
+		"Links": [
+		  3
+		],
+		"Enemies": [],
+		"Obstacles": [],
+		"Chests": 2
+	  },
+	  {
+		"Id": 5,
+		"Name": "Curtained Hall",
+		"Kind": "combat",
+		"Links": [
+		  3,
+		  6
+		],
+		"Enemies": [
+		  "bomber",
+		  "healer",
+          "brute"
+		],
+		"Obstacles": [
+		  {
+			"X": 205,
+			"Y": 135,
+			"W": 165,
+			"H": 36
+		  },
+		  {
+			"X": 265,
+			"Y": 345,
+			"W": 165,
+			"H": 36
+		  }
+		],
+		"Chests": 0
+	  },
+	  {
+		"Id": 6,
+		"Name": "The Empty Chair",
+		"Kind": "combat",
+		"Links": [
+		  5,
+		  7
+		],
+		"Enemies": [
+		  "healer",
+		  "brute",
+          "echo"
+		],
+		"Obstacles": [
+		  {
+			"X": 205,
+			"Y": 130,
+			"W": 44,
+			"H": 64
+		  },
+		  {
+			"X": 395,
+			"Y": 315,
+			"W": 44,
+			"H": 64
+		  },
+		  {
+			"X": 380,
+			"Y": 125,
+			"W": 44,
+			"H": 64
+		  }
+		],
+		"Chests": 0
+	  },
+	  {
+		"Id": 7,
+		"Name": "The Silent Host",
+		"Kind": "boss",
+		"Links": [
+		  6
+		],
+		"Enemies": [],
+		"Obstacles": [],
+		"Chests": 0
+	  }
+	]
+  },
+  {
+	"Id": 1,
+	"Name": "The Furnace of Ash",
+	"Memory": "Feel the anger. Let it pass without choosing your next step.",
+	"FloorColor": "887b76",
+	"AccentColor": "eca16d",
+	"Rooms": [
+	  {
+		"Id": 8,
+		"Name": "Furnace Steps",
+		"Kind": "combat",
+		"Links": [
+		  1
+		],
+		"Enemies": [
+		  "archer",
+		  "wisp",
+          "sentinel"
+		],
+		"Obstacles": [
+		  {
+			"X": 312,
+			"Y": 120,
+			"W": 48,
+			"H": 68
+		  },
+		  {
+			"X": 312,
+			"Y": 325,
+			"W": 48,
+			"H": 68
+		  }
+		],
+		"Chests": 0
+	  },
+	  {
+		"Id": 9,
+		"Name": "Hall of Embers",
+		"Kind": "combat",
+		"Links": [
+		  0,
+		  2,
+		  3
+		],
+		"Enemies": [
+		  "wisp",
+		  "sentinel",
+          "bomber"
+		],
+		"Obstacles": [
+		  {
+			"X": 393,
+			"Y": 135,
+			"W": 42,
+			"H": 48
+		  },
+		  {
+			"X": 218,
+			"Y": 325,
+			"W": 42,
+			"H": 48
+		  }
+		],
+		"Chests": 0
+	  },
+	  {
+		"Id": 10,
+		"Name": "The Cooling Well",
+		"Kind": "rest",
+		"Links": [
+		  1
+		],
+		"Enemies": [],
+		"Obstacles": [],
+		"Chests": 0
+	  },
+	  {
+		"Id": 11,
+		"Name": "Cinder Crossing",
+		"Kind": "combat",
+		"Links": [
+		  1,
+		  4,
+		  5
+		],
+		"Enemies": [
+		  "bomber",
+		  "healer",
+          "brute"
+		],
+		"Obstacles": [
+		  {
+			"X": 260,
+			"Y": 235,
+			"W": 120,
+			"H": 42
+		  }
+		],
+		"Chests": 0
+	  },
+	  {
+		"Id": 12,
+		"Name": "Sealed Letters",
+		"Kind": "treasure",
+		"Links": [
+		  3
+		],
+		"Enemies": [],
+		"Obstacles": [],
+		"Chests": 2
+	  },
+	  {
+		"Id": 13,
+		"Name": "Scorched Gallery",
+		"Kind": "combat",
+		"Links": [
+		  3,
+		  6
+		],
+		"Enemies": [
+		  "brute",
+		  "echo",
+          "stalker"
+		],
+		"Obstacles": [
+		  {
+			"X": 270,
+			"Y": 135,
+			"W": 165,
+			"H": 36
+		  },
+		  {
+			"X": 210,
+			"Y": 345,
+			"W": 165,
+			"H": 36
+		  }
+		],
+		"Chests": 0
+	  },
+	  {
+		"Id": 14,
+		"Name": "The Iron Gate",
+		"Kind": "combat",
+		"Links": [
+		  5,
+		  7
+		],
+		"Enemies": [
+		  "echo",
+		  "stalker",
+          "archer"
+		],
+		"Obstacles": [
+		  {
+			"X": 391,
+			"Y": 130,
+			"W": 44,
+			"H": 64
+		  },
+		  {
+			"X": 201,
+			"Y": 315,
+			"W": 44,
+			"H": 64
+		  },
+		  {
+			"X": 216,
+			"Y": 125,
+			"W": 44,
+			"H": 64
+		  }
+		],
+		"Chests": 0
+	  },
+	  {
+		"Id": 15,
+		"Name": "The Ember Knight",
+		"Kind": "boss",
+		"Links": [
+		  6
+		],
+		"Enemies": [],
+		"Obstacles": [],
+		"Chests": 0
+	  }
+	]
+  },
+  {
+	"Id": 2,
+	"Name": "The Drowned Archive",
+	"Memory": "The letters remain. Their love is not lost beneath the tide.",
+	"FloorColor": "728f9e",
+	"AccentColor": "a2dbea",
+	"Rooms": [
+	  {
+		"Id": 16,
+		"Name": "Low Water",
+		"Kind": "combat",
+		"Links": [
+		  1
+		],
+		"Enemies": [
+		  "sentinel",
+		  "bomber",
+          "healer"
+		],
+		"Obstacles": [
+		  {
+			"X": 300,
+			"Y": 120,
+			"W": 48,
+			"H": 68
+		  },
+		  {
+			"X": 300,
+			"Y": 325,
+			"W": 48,
+			"H": 68
+		  }
+		],
+		"Chests": 0
+	  },
+	  {
+		"Id": 17,
+		"Name": "Hall of Reflections",
+		"Kind": "combat",
+		"Links": [
+		  0,
+		  2,
+		  3
+		],
+		"Enemies": [
+		  "bomber",
+		  "healer",
+          "brute"
+		],
+		"Obstacles": [
+		  {
+			"X": 225,
+			"Y": 135,
+			"W": 42,
+			"H": 48
+		  },
+		  {
+			"X": 400,
+			"Y": 325,
+			"W": 42,
+			"H": 48
+		  }
+		],
+		"Chests": 0
+	  },
+	  {
+		"Id": 18,
+		"Name": "Moonwell",
+		"Kind": "rest",
+		"Links": [
+		  1
+		],
+		"Enemies": [],
+		"Obstacles": [],
+		"Chests": 0
+	  },
+	  {
+		"Id": 19,
+		"Name": "Sunken Shelves",
+		"Kind": "combat",
+		"Links": [
+		  1,
+		  4,
+		  5
+		],
+		"Enemies": [
+		  "brute",
+		  "echo",
+          "stalker"
+		],
+		"Obstacles": [
+		  {
+			"X": 280,
+			"Y": 235,
+			"W": 120,
+			"H": 42
+		  }
+		],
+		"Chests": 0
+	  },
+	  {
+		"Id": 20,
+		"Name": "The Letter Vault",
+		"Kind": "treasure",
+		"Links": [
+		  3
+		],
+		"Enemies": [],
+		"Obstacles": [],
+		"Chests": 2
+	  },
+	  {
+		"Id": 21,
+		"Name": "Silent Current",
+		"Kind": "combat",
+		"Links": [
+		  3,
+		  6
+		],
+		"Enemies": [
+		  "stalker",
+		  "archer",
+          "wisp"
+		],
+		"Obstacles": [
+		  {
+			"X": 225,
+			"Y": 135,
+			"W": 165,
+			"H": 36
+		  },
+		  {
+			"X": 285,
+			"Y": 345,
+			"W": 165,
+			"H": 36
+		  }
+		],
+		"Chests": 0
+	  },
+	  {
+		"Id": 22,
+		"Name": "Tidal Passage",
+		"Kind": "combat",
+		"Links": [
+		  5,
+		  7
+		],
+		"Enemies": [
+		  "archer",
+		  "wisp",
+          "sentinel"
+		],
+		"Obstacles": [
+		  {
+			"X": 225,
+			"Y": 130,
+			"W": 44,
+			"H": 64
+		  },
+		  {
+			"X": 415,
+			"Y": 315,
+			"W": 44,
+			"H": 64
+		  },
+		  {
+			"X": 400,
+			"Y": 125,
+			"W": 44,
+			"H": 64
+		  }
+		],
+		"Chests": 0
+	  },
+	  {
+		"Id": 23,
+		"Name": "The Mourning Tide",
+		"Kind": "boss",
+		"Links": [
+		  6
+		],
+		"Enemies": [],
+		"Obstacles": [],
+		"Chests": 0
+	  }
+	]
+  },
+  {
+	"Id": 3,
+	"Name": "The Garden of Almost",
+	"Memory": "You cannot rewrite yesterday. You can carry love into tomorrow.",
+	"FloorColor": "9b88a8",
+	"AccentColor": "ebce92",
+	"Rooms": [
+	  {
+		"Id": 24,
+		"Name": "First Light",
+		"Kind": "combat",
+		"Links": [
+		  1
+		],
+		"Enemies": [
+		  "healer",
+		  "brute",
+          "echo"
+		],
+		"Obstacles": [
+		  {
+			"X": 312,
+			"Y": 120,
+			"W": 48,
+			"H": 68
+		  },
+		  {
+			"X": 312,
+			"Y": 325,
+			"W": 48,
+			"H": 68
+		  }
+		],
+		"Chests": 0
+	  },
+	  {
+		"Id": 25,
+		"Name": "The Unchosen Path",
+		"Kind": "combat",
+		"Links": [
+		  0,
+		  2,
+		  3
+		],
+		"Enemies": [
+		  "brute",
+		  "echo",
+          "stalker"
+		],
+		"Obstacles": [
+		  {
+			"X": 393,
+			"Y": 135,
+			"W": 42,
+			"H": 48
+		  },
+		  {
+			"X": 218,
+			"Y": 325,
+			"W": 42,
+			"H": 48
+		  }
+		],
+		"Chests": 0
+	  },
+	  {
+		"Id": 26,
+		"Name": "The Warm Hearth",
+		"Kind": "rest",
+		"Links": [
+		  1
+		],
+		"Enemies": [],
+		"Obstacles": [],
+		"Chests": 0
+	  },
+	  {
+		"Id": 27,
+		"Name": "Framed Memories",
+		"Kind": "combat",
+		"Links": [
+		  1,
+		  4,
+		  5
+		],
+		"Enemies": [
+		  "stalker",
+		  "archer",
+          "wisp"
+		],
+		"Obstacles": [
+		  {
+			"X": 260,
+			"Y": 235,
+			"W": 120,
+			"H": 42
+		  }
+		],
+		"Chests": 0
+	  },
+	  {
+		"Id": 28,
+		"Name": "Keepsake Room",
+		"Kind": "treasure",
+		"Links": [
+		  3
+		],
+		"Enemies": [],
+		"Obstacles": [],
+		"Chests": 2
+	  },
+	  {
+		"Id": 29,
+		"Name": "Threaded Garden",
+		"Kind": "combat",
+		"Links": [
+		  3,
+		  6
+		],
+		"Enemies": [
+		  "wisp",
+		  "sentinel",
+          "bomber"
+		],
+		"Obstacles": [
+		  {
+			"X": 270,
+			"Y": 135,
+			"W": 165,
+			"H": 36
+		  },
+		  {
+			"X": 210,
+			"Y": 345,
+			"W": 165,
+			"H": 36
+		  }
+		],
+		"Chests": 0
+	  },
+	  {
+		"Id": 30,
+		"Name": "The Last Promise",
+		"Kind": "combat",
+		"Links": [
+		  5,
+		  7
+		],
+		"Enemies": [
+		  "sentinel",
+		  "bomber",
+          "healer"
+		],
+		"Obstacles": [
+		  {
+			"X": 391,
+			"Y": 130,
+			"W": 44,
+			"H": 64
+		  },
+		  {
+			"X": 201,
+			"Y": 315,
+			"W": 44,
+			"H": 64
+		  },
+		  {
+			"X": 216,
+			"Y": 125,
+			"W": 44,
+			"H": 64
+		  }
+		],
+		"Chests": 0
+	  },
+	  {
+		"Id": 31,
+		"Name": "The Weaver of If",
+		"Kind": "boss",
+		"Links": [
+		  6
+		],
+		"Enemies": [],
+		"Obstacles": [],
+		"Chests": 0
+	  }
+	]
+  }
+]
