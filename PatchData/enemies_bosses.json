@@ -1,0 +1,125 @@
+{
+  "Enemies": [
+	{
+	  "Id": "echo",
+	  "Name": "Ashen Echo",
+	  "Health": 52,
+	  "Damage": 9,
+	  "Speed": 67,
+	  "Behavior": 0,
+	  "Gold": 8
+	},
+	{
+	  "Id": "stalker",
+	  "Name": "Briar Stalker",
+	  "Health": 44,
+	  "Damage": 12,
+	  "Speed": 115,
+	  "Behavior": 1,
+	  "Gold": 10
+	},
+	{
+	  "Id": "archer",
+	  "Name": "Hollow Archer",
+	  "Health": 42,
+	  "Damage": 10,
+	  "Speed": 55,
+	  "Behavior": 2,
+	  "Gold": 12
+	},
+	{
+	  "Id": "wisp",
+	  "Name": "Lantern Wisp",
+	  "Health": 36,
+	  "Damage": 10,
+	  "Speed": 90,
+	  "Behavior": 3,
+	  "Gold": 14
+	},
+	{
+	  "Id": "sentinel",
+	  "Name": "Iron Sentinel",
+	  "Health": 90,
+	  "Damage": 16,
+	  "Speed": 44,
+	  "Behavior": 4,
+	  "Gold": 16
+	},
+	{
+	  "Id": "bomber",
+	  "Name": "Cinder Vessel",
+	  "Health": 40,
+	  "Damage": 18,
+	  "Speed": 82,
+	  "Behavior": 5,
+	  "Gold": 18
+	},
+	{
+	  "Id": "healer",
+	  "Name": "Mourning Acolyte",
+	  "Health": 56,
+	  "Damage": 8,
+	  "Speed": 48,
+	  "Behavior": 6,
+	  "Gold": 20
+	},
+	{
+	  "Id": "brute",
+	  "Name": "Griefbound Brute",
+	  "Health": 120,
+	  "Damage": 21,
+	  "Speed": 40,
+	  "Behavior": 7,
+	  "Gold": 22
+	}
+  ],
+  "Bosses": [
+	{
+	  "Id": "keeper",
+	  "Name": "The Silent Host",
+	  "Health": 420,
+	  "Damage": 17,
+	  "Attacks": [
+		"Porcelain Fan",
+		"Reserved Seat",
+        "Last Invitation"
+	  ]
+	},
+	{
+	  "Id": "huntsman",
+	  "Name": "The Ember Knight",
+	  "Health": 560,
+	  "Damage": 19,
+	  "Attacks": [
+		"Cinder Cleave",
+		"Furnace Line",
+        "Ashen Rush"
+	  ]
+	},
+	{
+	  "Id": "choir",
+	  "Name": "The Mourning Tide",
+	  "Health": 680,
+	  "Damage": 21,
+	  "Attacks": [
+		"Undertow",
+		"Drowned Letters",
+        "Lantern Pulse"
+	  ]
+	},
+	{
+	  "Id": "farewell",
+	  "Name": "The Weaver of If",
+	  "Health": 840,
+	  "Damage": 23,
+	  "Attacks": [
+		"Golden Threads",
+		"Almost a Life",
+        "Severance"
+	  ]
+	}
+  ],
+  "PhaseTrigger": "first_defeat",
+  "PhaseOneWait": 2.0,
+  "PhaseTwoWait": 1.4
+}
